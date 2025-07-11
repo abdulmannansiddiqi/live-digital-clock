@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+:root {
+    --font: 'Titillium Web', 'sens-serif';
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: #daa520;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.clockHead {
+    height: 40px;
+    width: 490px;
+    background-color: #bd901e;
+    border-radius: 15px;
+    box-shadow: 1px 0 10px black;
+    margin: 20px;
+    padding: 11px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.calender {
+    height: 40px;
+    width: 50%;
+    background: aliceblue;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day,
+.date,
+.month,
+.year {
+    margin: 0px 5px;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.clockFormat {
+    height: 30px;
+    width: 40%;
+    color: #007bff;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h3 {
+    color: white;
+    font-family: var(--font);
+    padding-right: 9px;
+}
+
+.swithFormat {
+    height: 20px;
+    width: 35px;
+    background: white;
+    border-radius: 10px;
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swithFormat::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 20px red;
+    transform: translateX(-10px);
+    transition: transform 0.4s ease-in-out;
+}
+
+#formatChanger:checked+.swithFormat::before {
+    box-shadow: 0 0 20px greenyellow;
+    background-color: greenyellow;
+    transform: translateX(8px);
+}
+
+#formatChanger {
+    display: none;
+    ;
+}
+
+.clockContainer {
+    height: 200px;
+    width: 500px;
+    background: #d0a332;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clock {
+    height: 150px;
+    width: 450px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.hrs,
+.mins,
+.secs {
+    color: white;
+    font-family: var(--font);
+    font-size: 90px;
+    font-weight: 600;
+    padding: 0 8px;
+}
+.colon{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    
+}
