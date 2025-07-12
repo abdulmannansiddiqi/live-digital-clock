@@ -1,2 +1,2 @@
 let  e = [400,300,4,1]
-console.log
+git add .add
